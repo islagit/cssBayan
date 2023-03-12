@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 50%;
+    margin: 0 auto;
+    font-family: 'Rubik Mono One', sans-serif;
+    padding: 24px 0;
+}
+
+.meme_img {
+    transition: 0.5s;
+    width: 300px;
+    height: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.header_h1 {
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.header_h1 h1 {
+    font-size: 32px;
+}
+
+.accordion_desc {
+    color: #0e0ec0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    transition: 0.3s;
+}
+
+.accordion_desc p {
+    height: 100%;
+    width: 100%;
+}
+
+.active {
+    height: 350px;
+    transition: 0.5s;
+}
+
+.show {
+    height: 300px;
+    transition: 0.5s;
+}
+
+.rotate {
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+.accordion_desc .fa-plus {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.accordion_img {
+    height: 0;
+}
+
+.container:hover .accordion_desc .fa-plus {
+    color: #000;
+    transition: 0.3s;
+}
+
+.container:hover .accordion_desc {
+    color: #000;
+    transition: 0.3s;
+}
