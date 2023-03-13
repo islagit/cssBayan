@@ -13,7 +13,8 @@ for (let i = 0; i < accordion.length; i++) {
 
         let current2 = document.getElementsByClassName("show");
         current2[0].className = current2[0].className.replace(" show", "");
-        $(accordion[i]).children(".meme_img").addClass("show");
+        accordion[i].children[1].classList.add('show')
     })
 }
+
 
